@@ -1,0 +1,755 @@
+body {
+    background-color: #f4f5f7;
+}
+
+/* 导航 */
+.navbar {
+    height: 81px;
+    border-color: transparent !important;
+    /* 背景透明 */
+    position: relative;
+}
+
+.to-top {
+    height: 150px;
+    width: 20px;
+    bottom: 100px;
+    right: 40px;
+    position: fixed;
+}
+
+.to-top img {
+    height: 30px;
+    width: 30px;
+}
+
+.to-top a:hover{
+    color: #fb7299 !important;
+}
+
+/* logo定位 */
+.navbar .container .navbar-brand {
+    position: absolute;
+    left: 80px;
+    top: 0;
+}
+
+/* 设置logo盒子大小 */
+.navbar .container .navbar-brand div {
+    width: 160px;
+    height: 81px;
+}
+
+.navbar .container .navbar-brand div img {
+    width: 135px;
+    height: 70px;
+}
+
+/* 定位标题栏 */
+.navbar .collapse {
+    position: absolute;
+    top: 20px;
+    left: 280px;
+}
+
+/* 标题栏的宽度 */
+.navbar .collapse li {
+    font-size: 20px;
+    width: 100px;
+}
+
+.navbar .d-flex {
+    margin-left: 100px;
+}
+
+/* 搜索框 */
+.navbar .d-flex input {
+    width: 420px;
+    height: 42px;
+    border-radius: 21px;
+}
+
+/* 子绝父相 */
+.navbar .user {
+    display: flex;
+}
+
+.navbar .user .U {
+    margin-left: 100px;
+}
+
+.navbar .user .U img {
+    height: 42px;
+    width: 42px;
+    border-radius: 21px;
+}
+
+.navbar .user .uN {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* 后面的功能类标志 */
+.navbar .user .point1 {
+    width: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.navbar .user .point {
+    margin-left: 20px;
+    width: 50px;
+}
+
+.navbar .user .point1 img {
+    width: 44px;
+    height: 40px;
+}
+
+.navbar .user .point img {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.navbar .user button {
+    margin-top: -5px;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    color: white;
+    background-color: #fb7299;
+    border-color: #fb7299;
+}
+
+@media(max-width:768px) {
+    .navbar .container-fluid .navbar-brand div img {
+        width: 112px;
+        height: 60px;
+    }
+
+    .navbar .navbar-toggler {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        height: 41px;
+        width: 45px;
+    }
+
+    .navbar .d-flex input {
+        width: 300px;
+    }
+}
+
+/* 响应式布局 */
+@media(min-width:768px) {
+    .navbar .container-fluid .navbar-brand div img {
+        width: 118px;
+        height: 66px;
+    }
+
+    .navbar .navbar-toggler {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        height: 41px;
+        width: 45px;
+    }
+
+    .navbar .d-flex input {
+        width: 300px;
+    }
+}
+
+@media(min-width:992px) {
+    .navbar .container-fluid .navbar-brand div img {
+        width: 135px;
+        height: 70px;
+    }
+
+    .navbar .d-flex input {
+        width: 300px;
+    }
+
+    .navbar .collapse li {
+        font-size: 20px;
+        width: 80px;
+    }
+}
+
+@media(min-width:1600px) {
+    .navbar .d-flex input {
+        width: 420px;
+    }
+
+    .navbar .collapse li {
+        font-size: 20px;
+        width: 80px;
+    }
+}
+
+@media(min-width:2000px) {
+    .navbar .d-flex input {
+        width: 420px;
+    }
+
+    .navbar .collapse li {
+        font-size: 20px;
+        width: 100px;
+    }
+}
+
+/* top-background部分 */
+.top-background {
+    margin: 0 auto;
+    position: relative;
+    width: 1280px;
+    height: 200px;
+    background-image: url(../图片2/个人空间.webp);
+}
+
+.top-background .back-bottom {
+    position: absolute;
+    display: flex;
+    height: 100px;
+    width: 1280px;
+    bottom: 0;
+    left: 10px;
+}
+
+.top-background .back-bottom .user-img {
+    width: 86px;
+    height: 86px;
+    border-radius: 43px;
+    background-image: linear-gradient(transparent, rgb(255, 255, 255, 0.5));
+}
+
+.top-background .back-bottom .user-img img {
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+.top-background .back-bottom .name-signature {
+    margin-left: 15px;
+    width: 1000px;
+    height: 80px;
+}
+
+.top-background .back-bottom .name-signature .name {
+    width: 100px;
+    line-height: 35px;
+    font-size: 22px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+.top-background .back-bottom .name-signature input {
+    margin-top: 5px;
+    width: 800px;
+    font-size: 16px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 0;
+}
+
+/* 右上角的表栏 */
+.top-background .top-in {
+    width: 148px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 5px;
+    font-size: 16px;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: #ffe4d5;
+    display: flex;
+}
+
+.top-background .top-in .form-select {
+    width: 100px;
+    height: 36px;
+    font-size: 16px;
+}
+
+/* 选择的标题栏 */
+.lan {
+    position: relative;
+    width: 1280px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.lan .topic {
+    position: absolute;
+    top: 27px;
+    display: flex;
+    width: 900px;
+}
+
+.lan .topic .li {
+    margin-left: 36px;
+    font-size: 18px;
+    height: 30px;
+}
+
+.lan .topic input {
+    margin-left: 30px;
+    width: 136px;
+    height: 30px;
+    background-color: transparent;
+    border: 1;
+    border-radius: 15px;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.lan .topic .li img {
+    width: 24px;
+    height: 24px;
+}
+
+/* fans板块 */
+.fans {
+    position: absolute;
+    display: flex;
+    right: 10px;
+    top: 20px;
+}
+
+.fans .fs {
+    text-align: center;
+    width: 60px;
+    height: 40px;
+}
+
+.fans .fs .zi {
+    color: #99a2aa;
+    font-size: 16px;
+}
+
+/* hover栏 */
+.p {
+    position: relative;
+    width: 1208px;
+    margin: 0 auto;
+}
+.p .float {
+    position: absolute;
+    width: 60px;
+    height: 6px;
+    left: 0;
+    top: 0;
+    background-color: #00a1d6;
+    transition: all .5s ;
+    display: inline-block;
+}
+.topic a .tp2 img{
+    transition: all .5s;
+}
+.topic a:nth-child(2) img:hover .p .float{
+    background-color: #fb7299;
+    transform: translate(70px);
+    transition: all .5s;
+}
+.topic a .tp3 img{
+    transition: all .5s;
+}
+.topic a .tp3 img:hover .p .float{
+    transform: translate(70px);
+    transition: all .5s;
+}
+.topic a .tp4 img{
+    transition: all .5s;
+}
+.topic a .tp4 img:hover .p .float{
+    transform: translate(70px);
+    transition: all .5s;
+}
+.topic a .tp5 img{
+    transition: all .5s;
+}
+.topic a .tp5 img:hover .p .float{
+    transform: translate(70px);
+    transition: all .5s;
+}
+.topic a .tp6 img{
+    transition: all .5s;
+}
+.topic a .tp6 img:hover .p .float{
+    transform: translate(70px);
+    transition: all .5s;
+}
+.topic a .tp7 img{
+    transition: all .5s;
+}
+.topic a .tp7 img:hover .p .float{
+    transform: translate(70px);
+    transition: all .5s;
+}
+
+
+/* 中心板块 */
+.bodies {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 1280px;
+    position: relative;
+}
+
+/* 左边的大板块 */
+.bodies .left {
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 936px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 14px;
+}
+
+/* 左边开始 第一个板块 */
+.bodies .left .first-banner .first-ban-top {
+    font-size: 16px;
+}
+
+.bodies .left .first-banner .first-ban-top .se {
+    margin-left: 40px;
+}
+
+.bodies .left hr {
+    width: 906px;
+}
+
+.bodies .left .first-banner .bottom-display {
+    display: flex;
+}
+
+.bodies .left .first-banner .bottom-display .dis {
+    margin-left: 20px;
+    width: 360px;
+    height: 200px;
+    border: 4px dotted #99a2aa;
+}
+
+.bodies .left .first-banner .bottom-display .dis .plus {
+    text-align: center;
+    margin-top: -10px;
+}
+
+.bodies .left .first-banner .bottom-display .dis .plus img {
+    margin-left: -5px;
+    width: 80px;
+    height: 80px;
+}
+
+.bodies .left .first-banner .bottom-display img {
+    margin-left: 20px;
+    margin-top: 60px;
+    width: 288px;
+    height: 139px;
+}
+
+.bodies .left .first-banner .bottom-display .dis:hover {
+    border: 4px dotted #00a1d6;
+    color: #00a1d6;
+}
+
+/* 左边的第二板块 */
+.bodies .left .second-banner .second-ban-top {
+    display: flex;
+    height: 50px;
+    overflow: hidden;
+}
+
+.bodies .left h3 {
+    font-size: 27px;
+    width: 120px;
+}
+
+.bodies .left .second-banner span {
+    text-align: center;
+    margin-top: 8px;
+    width: 100px;
+    font-size: 16px;
+}
+
+.bodies .left .second-banner .bo {
+    margin-top: 8px;
+    text-align: center;
+    border-radius: 5px;
+    width: 84px;
+    height: 25px;
+    border: 1px solid #99a2aa;
+    margin-left: 300px;
+}
+
+.bodies .left .second-banner .bo img {
+    width: 20px;
+    height: 20px;
+}
+
+.bodies .left .second-banner .more {
+    margin-top: 8px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 64px;
+    height: 25px;
+    border: 1px solid #99a2aa;
+}
+
+.more img {
+    width: 20px;
+    height: 20px;
+}
+
+/* 第二板块的视频 */
+.left .second-banner .second-bo {
+    margin-top: 15px;
+    height: 200px;
+    display: flex;
+}
+
+.left .second-banner .second-bo .se-video {
+    width: 160px;
+    height: 160px;
+}
+
+.left .second-banner .second-bo .se-video img {
+    width: 160px;
+    height: 120px;
+    border-radius: 5px;
+}
+
+.left .second-banner .second-bo .se-video .btwen {
+    margin-top: 10px;
+}
+
+.left .second-banner .second-bo .se-video .btwen h5 {
+    height: 40px;
+    font-size: 16px;
+}
+
+.left .second-banner .second-bo .se-video .btwen .b {
+    height: 30px;
+}
+
+.left .second-banner .second-bo .se-video .btwen .view img {
+    width: 20px;
+    height: 20px;
+}
+
+.left .second-banner .second-bo .se-video .btwen .b .p2 {
+    margin-left: 10px;
+}
+
+/* 第三板块 */
+.bodies .left .third-ban-top {
+    display: flex;
+}
+
+.third-ban-top .more {
+    margin-top: 8px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 696px;
+    width: 64px;
+    height: 25px;
+    border: 1px solid #99a2aa;
+}
+
+/* 第三板块的下面 */
+.third-banner .third-bo {
+    height: 100px;
+    margin-top: 15px;
+    display: flex;
+}
+
+.third-banner .third-bo .-lf {
+    width: 680px;
+}
+
+.third-banner .third-bo .-lf .p1 {
+    line-height: 30px;
+}
+
+.third-banner .third-bo .-lf .lanmu {
+    margin-top: 5px;
+    line-height: 30px;
+}
+
+.third-banner .third-bo .-lf .lanmu img {
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.third-banner .third-bo .-lf .lanmu span {
+    width: 30px;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.third-banner .third-bo .-rt img {
+    margin-top: -10px;
+    margin-left: 40px;
+    width: 160px;
+    height: 100px;
+}
+
+/* 收藏夹 */
+.left .collect .ban-top {
+    display: flex;
+}
+
+.left .collect .ban-top .more {
+    margin-top: 8px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 666px;
+    width: 64px;
+    height: 25px;
+    border: 1px solid #99a2aa;
+}
+
+.left .collect .ban-top h3 {
+    width: 150px;
+}
+
+.collect .collects {
+    margin-top: 12px;
+    width: 908px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.collect .collects .boxs {
+    margin-right: 15px;
+    width: 160px;
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.collect .collects .boxs img {
+    width: 160px;
+    height: 160px;
+    border-radius: 5px;
+}
+
+.collect .collects .boxs .wen {
+    height: 40px;
+    margin-top: 10px;
+}
+
+/* 番剧 */
+.left .fan .fan-ban-top {
+    display: flex;
+}
+
+.left .fan-ban-top .more {
+    margin-top: 8px;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 696px;
+    width: 64px;
+    height: 25px;
+    border: 1px solid #99a2aa;
+}
+
+.left .fan-bo {
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left .fan-bo .fan-self {
+    margin-left: 10px;
+    display: flex;
+    width: 400px;
+    height: 240px;
+}
+
+.left .fan-bo .fan-self .fan-lf img {
+    width: 130px;
+    height: 180px;
+    border-radius: 5px;
+}
+
+.fan-bo .fan-self .fan-intro {
+    width: 270px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 将对象作为弹性伸缩盒子模型显示 */
+    display: -webkit-box;
+    /* 限制在一个块元素显示的文本的行数 */
+    /* -webkit-line-clamp 其实是一个不规范属性，使用了WebKit的CSS扩展属性，该方法适用于WebKit浏览器及移动端；*/
+    -webkit-line-clamp: 4;
+    /* 设置或检索伸缩盒对象的子元素的排列方式 */
+    -webkit-box-orient: vertical;
+}
+
+.left .fan-bo .fan-self .fan-rt {
+    margin-left: 18px;
+    margin-right: 15px;
+    width: 320px;
+    height: 200px;
+}
+
+/* 更多的hover */
+
+.more:hover {
+    width: 64px;
+    height: 25px;
+    border: 1px solid #00a1d6;
+    color: #00a1d6;
+}
+
+/* 右边的个人信息 */
+.bodies .right {
+    border-radius: 5px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: #ffffff;
+    padding: 14px;
+}
+
+.bodies .right .box {
+    display: flex;
+}
+
+.bodies .right .box .xiu {
+    width: 80px;
+    text-align: center;
+    margin-left: 100px;
+    border-radius: 5px;
+    border: 1px solid#99a2aa;
+    color: #99a2aa;
+}
+
+.bodies .right .box .xiu:hover {
+    border: 1px solid #00a1d6;
+    color: #00a1d6;
+}
+
+.bodies .right div,
+span,
+hr {
+    line-height: 20px;
+    width: 300px;
+}
+
+.bodies .right .second {
+    margin-left: 100px;
+}

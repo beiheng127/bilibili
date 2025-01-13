@@ -1,0 +1,807 @@
+/* 导航 */
+.navbar {
+    height: 81px;
+    border-color: transparent !important;
+    /* 背景透明 */
+    position: fixed;
+    top: 0;
+}
+
+.to-top {
+    z-index: 100;
+    height: 150px;
+    width: 20px;
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+}
+
+.to-top img {
+    height: 30px;
+    width: 30px;
+}
+
+.to-top a:hover{
+    color: #fb7299 !important;
+}
+
+/* logo定位 */
+
+.navbar .container .navbar-brand {
+    position: absolute;
+    left: 80px;
+    top: 0;
+}
+
+/* 设置logo盒子大小 */
+.navbar .container .navbar-brand div {
+    width: 160px;
+    height: 81px;
+}
+
+.navbar .container .navbar-brand div img {
+    width: 135px;
+    height: 70px;
+}
+
+/* 定位标题栏 */
+.navbar .collapse {
+    position: absolute;
+    top: 20px;
+    left: 280px;
+}
+
+/* 标题栏的宽度 */
+.navbar .collapse li {
+    font-size: 20px;
+    width: 100px;
+}
+
+.navbar .d-flex {
+    margin-left: 100px;
+}
+
+/* 搜索框 */
+.navbar .d-flex input {
+    width: 420px;
+    height: 42px;
+    border-radius: 21px;
+}
+
+/* 子绝父相 */
+.navbar .user {
+    display: flex;
+}
+
+.navbar .user .U {
+    margin-left: 100px;
+}
+
+.navbar .user .U img {
+    height: 42px;
+    width: 42px;
+    border-radius: 21px;
+}
+
+.navbar .user .uN {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* 后面的功能类标志 */
+.navbar .user .point1 {
+    width: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.navbar .user .point {
+    margin-left: 20px;
+    width: 50px;
+}
+
+.navbar .user .point1 img {
+    width: 44px;
+    height: 40px;
+}
+
+.navbar .user .point img {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.navbar .user button {
+    margin-top: -5px;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 20px;
+    color: white;
+    background-color: #fb7299;
+    border-color: #fb7299;
+}
+
+@media(max-width:768px) {
+    .navbar .container-fluid .navbar-brand div img {
+        width: 112px;
+        height: 60px;
+    }
+
+    .navbar .navbar-toggler {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        height: 41px;
+        width: 45px;
+    }
+
+    .navbar .d-flex input {
+        width: 300px;
+    }
+}
+
+/* 响应式布局 */
+@media(min-width:768px) {
+    .navbar .container-fluid .navbar-brand div img {
+        width: 118px;
+        height: 66px;
+    }
+
+    .navbar .navbar-toggler {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        height: 41px;
+        width: 45px;
+    }
+
+    .navbar .d-flex input {
+        width: 300px;
+    }
+}
+
+@media(min-width:992px) {
+    .navbar .container-fluid .navbar-brand div img {
+        width: 135px;
+        height: 70px;
+    }
+
+    .navbar .d-flex input {
+        width: 300px;
+    }
+
+    .navbar .collapse li {
+        font-size: 20px;
+        width: 80px;
+    }
+}
+
+@media(min-width:1600px) {
+    .navbar .d-flex input {
+        width: 420px;
+    }
+
+    .navbar .collapse li {
+        font-size: 20px;
+        width: 80px;
+    }
+}
+
+@media(min-width:2000px) {
+    .navbar .d-flex input {
+        width: 420px;
+    }
+
+    .navbar .collapse li {
+        font-size: 20px;
+        width: 100px;
+    }
+}
+
+
+/* 顶部大图 */
+.Bigpic {
+    margin: 0 auto;
+    width: 1820px;
+    height: 600px;
+    background-image: url(../图片/拜年祭.png);
+    margin-bottom: 50px;
+    transition: all 1s;
+}
+
+.Bigpic:hover {
+    width: 1820px;
+    height: 1000px;
+    margin: 0 auto;
+    transition: all 1s;
+}
+
+/* 总表栏 */
+.wraping {
+    font-size: 14px;
+    height: 72px;
+    width: 1820px;
+    margin: auto;
+    display: flex;
+}
+
+/* 标题栏 */
+.wraping .channal {
+    margin-top: 20px;
+    display: flex;
+    width: 200px;
+}
+
+.wraping .channal .biao {
+    text-align: center;
+    margin-left: 30px;
+    width: 50px;
+    height: 90px;
+}
+
+.wraping .channal .biao img {
+    width: 42px;
+    height: 42px;
+}
+
+.wraping .channal .biao .tu1 img {
+    margin-left: -5px;
+    width: 70px;
+    height: 42px;
+}
+
+.wraping .channel .channel-items-left {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1380px;
+    height: 90px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.wraping .channel .channel-items-left .channel-link {
+    margin-left: 10px;
+    margin-top: 6px;
+    width: 84px;
+    height: 36px;
+    font-size: 16px;
+    background-color: #f6f7f8;
+    text-align: center;
+    align-self: center;
+}
+
+.channel-items__right {
+    width: 240px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.channel-items__right .channel-link__right {
+    margin: 10px;
+    font-size: 14px;
+    height: 20px;
+}
+
+.channel-items__right svg {
+    width: 14px;
+    height: 14px;
+}
+
+@media(max-width:768px) {
+    .wraping .channel .channel-items-left {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+        height: 84px;
+        overflow: hidden;
+    }
+}
+
+@media(min-width:768px) {
+    .wraping .channel .channel-items-left {
+        display: flex;
+        flex-wrap: wrap;
+        width: 600px;
+        height: 84px;
+        overflow: hidden;
+    }
+}
+
+@media(min-width:992px) {
+    .wraping .channel .channel-items-left {
+        display: flex;
+        flex-wrap: wrap;
+        width: 800px;
+        height: 84px;
+        overflow: hidden;
+    }
+}
+
+@media(min-width:992px) {
+    .wraping .channel .channel-items-left {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1000px;
+        height: 84px;
+        overflow: hidden;
+    }
+}
+
+@media(min-width:1200px) {
+    .wraping .channel .channel-items-left {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1200px;
+        height: 84px;
+        overflow: hidden;
+    }
+}
+
+@media(min-width:1400px) {
+    .wraping .channel .channel-items-left {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1380px;
+        height: 84px;
+        overflow: hidden;
+    }
+}
+
+/* 轮播图 */
+
+.def1 {
+    margin-top: 50px;
+    position: relative;
+    height: 540px;
+}
+
+/* 最右边的刷新视频 */
+.def1 .refresh {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    background-color: #ffffff;
+    height: 65px;
+    width: 15px;
+    border: 1px;
+    transition: all 10000s;
+}
+
+.def1 .refresh img {
+    height: 12px;
+    width: 12px;
+    transition: all 10000s;
+}
+
+.def1 .refresh a:hover .def1 .refresh img {
+    transform: rotate(360deg);
+}
+
+.carousel .carousel-inner .carousel-item {
+    width: 810px;
+    height: 520px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* 推荐视频 */
+.recommend-video ul {
+    width: 1000px;
+    height: 480px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recommend-video li {
+    height: 240px;
+    width: 300px;
+    margin-left: 12px;
+    overflow: hidden;
+}
+
+.recommend-video li .cover {
+    position: relative;
+    height: 160px;
+    width: 300px;
+    border-radius: 5px;
+    transition: all .5s;
+}
+
+.recommend-video li .video {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 36px;
+    background-image: linear-gradient(transparent, rgb(0, 0, 0, 0.7));
+    opacity: 1;
+    /* 默认状态下为，mask透明度为0，注意背景和内容都为0 */
+    transition: all .5s;
+    z-index: 99;
+    color: #f3f3f6;
+}
+
+.recommend-video li .video svg {
+    color: #f3f3f6;
+}
+
+.recommend-video li .video .fonts {
+    font-size: 14px;
+    height: 14px;
+    margin-left: 15px;
+    margin-bottom: -15px;
+    color: #f3f3f6;
+}
+
+.recommend-video li .video-bottom {
+    margin-top: 10px;
+}
+
+.recommend-video li .video-bottom h3 {
+    font-size: 16px;
+    color: #58595b;
+}
+
+.recommend-video li .font {
+    font-size: 12px;
+    color: #a1a5ac;
+}
+
+/* 动画 */
+.recommend-video li .cover:hover .recommend-video li .video .fonts {
+    width: 0;
+    height: 0;
+}
+
+.recommend-video li .cover:hover .recommend-video li .video {
+    background-color: transparent;
+    z-index: 100;
+    background-image: linear-gradient(transparent);
+    opacity: 0;
+}
+
+.recommend-video li .cover {
+    background-image: url(../图片/敢杀我的封.png);
+}
+
+.recommend-video li .v2 {
+    background-image: url(../图片/杀手\ \(1\).png) !important;
+    z-index: 10;
+}
+
+.recommend-video li .v3 {
+    background-image: url(../图片/黑神话.png) !important;
+    z-index: 10;
+}
+
+.recommend-video li .v4 {
+    background-image: url(../图片/何同学\ \(1\).png) !important;
+}
+
+.recommend-video li .v5 {
+    background-image: url(../图片/洛天依.png) !important;
+}
+
+.recommend-video li .v6 {
+    background-image: url(../图片/英雄联盟.png) !important;
+}
+
+/* 大图的响应式布局 */
+@media(max-width:992px) {
+    .carousel {
+        overflow: hidden;
+        width: 603px;
+        height: 430px;
+    }
+
+    .carousel .carousel-inner .carousel-item {
+        overflow: hidden;
+        width: 603px;
+        height: 430px;
+    }
+}
+
+@media(min-width:992px) {
+    .carousel {
+        overflow: hidden;
+        width: 650px;
+        height: 435px;
+    }
+
+    .carousel .carousel-inner .carousel-item {
+        overflow: hidden;
+        width: 650px;
+        height: 435px;
+    }
+}
+
+@media(min-width:1200px) {
+    .carousel {
+        overflow: hidden;
+        width: 702px;
+        height: 440px;
+    }
+
+    .carousel .carousel-inner .carousel-item {
+        overflow: hidden;
+        width: 702px;
+        height: 440px;
+    }
+}
+
+@media(min-width:1400px) {
+    .carousel {
+        overflow: hidden;
+        width: 720px;
+        height: 445px;
+    }
+
+    .carousel .carousel-inner .carousel-item {
+        overflow: hidden;
+        width: 750px;
+        height: 445px;
+    }
+}
+
+@media(min-width:1600px) {
+    .carousel {
+        overflow: hidden;
+        width: 780px;
+        height: 450px;
+    }
+
+    .carousel .carousel-inner .carousel-item {
+        overflow: hidden;
+        width: 810px;
+        height: 450px;
+    }
+}
+
+/* 推荐视频的更多svg */
+.top- svg {
+    margin-top: 10px;
+}
+
+/* 推荐图片 */
+.def2 {
+    flex-wrap: wrap;
+    height: 270px;
+    position: relative;
+}
+
+.def2 .recommend-video .list {
+    width: 1820px;
+    height: 280px;
+}
+
+.def2 .recommend-video .list li {
+    margin: 18px;
+}
+
+.recommend-video li .l1 {
+    background-image: url(../图片/轻链.png) !important;
+    width: 280px;
+}
+
+.recommend-video li .l2 {
+    background-image: url(../图片/丹恒.png) !important;
+    width: 280px;
+}
+
+.recommend-video li .l3 {
+    background-image: url(../图片/神女劈观.png) !important;
+    width: 280px;
+}
+
+.recommend-video li .l4 {
+    background-image: url(../图片/耀骑士.png) !important;
+    width: 280px;
+}
+
+.recommend-video li .l5 {
+    background-image: url(../图片/w.png) !important;
+    width: 280px;
+}
+
+.def2 .recommend-video li .video {
+    width: 280px;
+}
+
+.def2 .more {
+    position: absolute;
+    right: 100px;
+    top: -10px;
+}
+
+.def2 .more img {
+    width: 36px;
+    height: 36px;
+}
+
+@media(max-width:768px) {
+    .def2 .recommend-video .list li {
+        margin: 5px;
+    }
+}
+
+@media(min-width:768px) {
+    .def2 .recommend-video .list li {
+        margin: 7px;
+    }
+}
+
+@media(min-width:992px) {
+    .def2 .recommend-video .list li {
+        margin: 10px;
+    }
+}
+
+@media(min-width:1600px) {
+    .def2 .recommend-video .list li {
+        margin: 13px;
+    }
+}
+
+@media(min-width:2000px) {
+    .def2 .recommend-video .list li {
+        margin: 18px;
+    }
+}
+
+/* loading */
+.load {
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+/* 隐藏内容 */
+.extra .hidden1 .features .inner {
+    display: flex;
+    width: 1820px;
+}
+
+.hidden1 {
+    width: 1600px;
+    height: 50px;
+    /*完工改成10px*/
+    margin: auto;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.hidden1:hover {
+    width: 1600px;
+    height: 540px;
+    transition: all 1s;
+}
+
+/* 以下为借鉴 */
+/*特色*/
+#features {
+    border-radius: 9px;
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+/* Table切换 */
+.list0 {
+    border-radius: 9px;
+    width: 1400px;
+    margin-top: 25px;
+    position: relative;
+}
+
+#SwitchBigPic {
+    border-radius: 9px;
+    border: 1px solid #ddd;
+}
+
+#SwitchBigPic span {
+    display: none;
+}
+
+#SwitchBigPic img {
+    width: 1200px;
+    height: 400px;
+    border-radius: 9px;
+}
+
+#SwitchBigPic .sp {
+    display: block;
+}
+
+#SwitchNav {
+    width: 160px;
+    position: absolute;
+    top: 0px;
+    left: 1200px;
+}
+
+#SwitchNav li {
+    margin-top: 36px;
+    width: 160px;
+    height: 100px;
+    margin-bottom: 1px;
+}
+
+#SwitchNav a {
+    margin: auto;
+    font-size: 22px;
+    color: #fb7299;
+    font-weight: bold;
+    width: 160px;
+}
+
+/* 版权 */
+.wrapping {
+    overflow: hidden;
+    background-color: #f6f7f8;
+}
+
+.footer .top-foot {
+    display: flex;
+    height: 144px;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.footer .top-foot .ban {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 400px;
+    height: 144px;
+}
+
+.footer .top-foot .ban ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .top-foot .ban ul a {
+    width: 400px;
+}
+
+.footer .top-foot .ban li {
+    width: 90px;
+}
+
+.footer .top-foot .guanfang {
+    margin-top: 36px;
+    display: flex;
+    margin-left: 160px;
+    height: 100px;
+    width: 200px;
+}
+
+.footer .top-foot .guanfang .imgine {
+    margin-left: 50px;
+    height: 80px;
+    width: 80px;
+}
+
+.footer .top-foot .guanfang img {
+    width: 60px;
+    height: 60px;
+}
+
+.footer hr {
+    margin: 0 auto;
+}
+
+.footer .bottom-foot {
+    margin: 20px auto;
+    height: 140px;
+    width: 1400px;
+}
+
+.footer .bottom-foot .wen div {
+    line-height: 20px;
+    text-align: center;
+    width: 1400px;
+}
